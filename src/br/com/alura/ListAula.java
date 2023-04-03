@@ -7,6 +7,7 @@ import br.com.alura.model.Conta;
 
 public class ListAula {
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		/*
 		 * - ArrayList - Lista Normal
