@@ -2,6 +2,7 @@ package br.com.alura.model;
 
 public class Conta extends Object{
 
+	private String nome;
 	private int numero;
 	private int agencia;
 	private double saldo;
@@ -10,7 +11,8 @@ public class Conta extends Object{
 		
 	}
 	
-	public Conta(int a, int n) {
+	public Conta(String no, int a, int n) {
+		this.nome = no;
 		this.numero = n;
 		this.agencia = a;
 	}
@@ -24,8 +26,12 @@ public class Conta extends Object{
 		return numero;
 	}
 	
+	public String getNome() {
+		return nome;
+	}
+
 	@Override
 	public String toString() {
-		return "N Conta: " + this.numero;
+		return "| Numero: " + this.numero + " | Nome: " + this.nome + " | ";
 	}
 }
